@@ -3,6 +3,7 @@ from typing import Annotated
 from fastapi import Security, Depends, HTTPException
 from fastapi.security import OAuth2PasswordBearer
 from jose import jwt, JWTError
+from jwt import PyJWTError
 from sqlalchemy.ext.asyncio import AsyncSession
 from starlette import status
 from starlette.status import HTTP_403_FORBIDDEN
